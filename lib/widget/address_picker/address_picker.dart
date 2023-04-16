@@ -45,7 +45,7 @@ class AddressPicker extends StatelessWidget {
 
   final AddressName? inital;
 
-  AddressPicker(
+  const AddressPicker(
       {Key? key,
       this.mode = AddressPickerMode.provinceCityAndDistrict,
       this.onSelectedAddressChanged,
@@ -90,7 +90,7 @@ class _AddressPicker extends StatefulWidget {
 
   final AddressName? inital;
 
-  _AddressPicker(
+  const _AddressPicker(
       {Key? key,
       required this.provinces,
       required this.mode,

@@ -4,7 +4,7 @@ import 'dart:ui' as ui;
 
 class ImageSheet extends StatelessWidget {
 
-  ImageSheet.fromGrid({
+  const ImageSheet.fromGrid({
     required this.imagePath,
     required this. grid,
     required this. index,

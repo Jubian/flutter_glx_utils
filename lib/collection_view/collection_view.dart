@@ -11,7 +11,7 @@ typedef CellWidgetBuilder = Widget? Function(BuildContext context, ListItem item
 
 class CollectionView extends CustomScrollView {
 
-  CollectionView({
+  const CollectionView({
     Key? key,
     Axis scrollDirection = Axis.vertical,
     bool reverse = false,

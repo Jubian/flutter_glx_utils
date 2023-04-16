@@ -76,7 +76,7 @@ class _CustomSwitchState extends State<CustomSwitch> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(widget.height/2),
                   gradient: LinearGradient(
-                    colors: [Color(0xFFFEB982), Color(0xFFF69B52)],
+                    colors: const [Color(0xFFFEB982), Color(0xFFF69B52)],
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight,
                   ),

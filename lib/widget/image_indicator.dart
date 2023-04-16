@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 
 class ImageIndicator extends Decoration {
 
-  ImageIndicator({required this.image, required this.size});
+  const ImageIndicator({required this.image, required this.size});
 
   final ui.Image image;
   final Size size;

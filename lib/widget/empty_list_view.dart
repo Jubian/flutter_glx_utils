@@ -17,7 +17,7 @@ class EmptyListView extends StatelessWidget {
   final void Function()? onLoading;
 
 
-  EmptyListView({
+  const EmptyListView({
     required this.itemCount, 
     required this.emptyView, 
     required this.itemBuilder,
