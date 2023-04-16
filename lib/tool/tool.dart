@@ -4,7 +4,7 @@ import 'package:collection/collection.dart';
 
 class ToolsUtils {
 
-  MaterialColor createMaterialColor(Color color) {
+  static MaterialColor createMaterialColor(Color color) {
     List<double> strengths = [.05];
     Map<int, Color> swatch = {};
     final int r = color.red, g = color.green, b = color.blue;
@@ -24,7 +24,7 @@ class ToolsUtils {
     return MaterialColor(color.value, swatch);
   }
 
-  Map<String, dynamic> genNotNullMap({List<String>? keys, List<dynamic>? values}) {
+  static Map<String, dynamic> genNotNullMap({List<String>? keys, List<dynamic>? values}) {
     assert(keys != null && values != null && keys.length == values.length, '参数不匹配');
     Map<String, dynamic> map = {};
     keys!.forEachIndexed((index, element) {
