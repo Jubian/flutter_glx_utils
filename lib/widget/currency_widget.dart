@@ -10,7 +10,7 @@ class CustomSwitch extends StatefulWidget {
   final double padding;
   final ValueChanged<int> onChanged;
 
-  CustomSwitch({
+  const CustomSwitch({
     required this.text1, 
     required this.text2, 
     required this.width, 
@@ -23,7 +23,7 @@ class CustomSwitch extends StatefulWidget {
   });
 
   @override
-  _CustomSwitchState createState() => _CustomSwitchState();
+  State<CustomSwitch> createState() => _CustomSwitchState();
 }
 
 class _CustomSwitchState extends State<CustomSwitch> {

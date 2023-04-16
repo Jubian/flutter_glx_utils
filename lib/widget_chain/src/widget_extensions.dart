@@ -629,8 +629,8 @@ extension WidgetChantExtWidget on Widget {
   }) {
     return PreferredSize(
       key: key,
-      child: this,
-      preferredSize: preferredSize
+      preferredSize: preferredSize,
+      child: this
     );
   }
 
@@ -676,8 +676,8 @@ extension WidgetChantExtWidget on Widget {
       backgroundColor: backgroundColor,
       elevation: elevation,
       shape: shape,
-      child: this,
       semanticLabel: semanticLabel,
+      child: this,
     );
   }
 
@@ -714,7 +714,6 @@ extension WidgetChantExtWidget on Widget {
     bool maintainBottomViewPadding = false,
   }) {
     return SafeArea(
-      child: this,
       key: key,
       left: left,
       top: top,
@@ -722,6 +721,7 @@ extension WidgetChantExtWidget on Widget {
       bottom: bottom,
       minimum: minimum,
       maintainBottomViewPadding: maintainBottomViewPadding,
+      child: this,
     );
   }
 
@@ -792,9 +792,9 @@ extension WidgetChantExtWidget on Widget {
     required Future<bool> Function()? onWillPop
   }) {
     return WillPopScope(
-      key: key,
-      child: this, 
-      onWillPop: onWillPop
+      key: key, 
+      onWillPop: onWillPop,
+      child: this
     );
   }
 }

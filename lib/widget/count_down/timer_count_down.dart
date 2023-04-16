@@ -24,7 +24,7 @@ class Countdown extends StatefulWidget {
   ///
   /// Simple countdown timer
   ///
-  Countdown({
+  const Countdown({
     Key? key,
     required this.time,
     required this.build,
@@ -34,7 +34,7 @@ class Countdown extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _CountdownState createState() => _CountdownState();
+  State<Countdown> createState() => _CountdownState();
 }
 
 ///
