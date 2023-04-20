@@ -16,12 +16,26 @@ extension WidgetChantExtWidgetList<T extends Widget> on List<T> {
   ///   .addNeighbor(widget)
   ///   .addNeighbor(widget)
   ///   .intoColumn();
-  List<Widget> addNeighbor(T widget) {
+  List<T> addNeighbor(T widget) {
     return this..add(widget);
   }
 
-  List<Widget> addAllNeighbor(List<T> widgets) {
+  List<T> addAllNeighbor(List<T> widgets) {
     return this..addAll(widgets);
+  }
+
+  List<T> addWidgetIf(bool condition, T item) {
+    if (condition) {
+      add(item);
+    }
+    return this;
+  }
+
+  List<T> addWidgetIfNotNull(T? widget) {
+    if (widget != null) {
+      add(widget);
+    }
+    return this;
   }
 
 
