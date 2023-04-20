@@ -824,4 +824,25 @@ extension WidgetChantExtWidget on Widget {
       child: this,
     );
   }
+
+  MouseRegion intoMouseRegion({
+    Key? key,
+    void Function(PointerEnterEvent)? onEnter,
+    void Function(PointerExitEvent)? onExit,
+    void Function(PointerHoverEvent)? onHover,
+    MouseCursor cursor = MouseCursor.defer,
+    bool opaque = true,
+    HitTestBehavior? hitTestBehavior,
+  }) {
+    return MouseRegion(
+      key: key,
+      onEnter: onEnter,
+      onExit: onExit,
+      onHover: onHover,
+      cursor: cursor,
+      opaque: opaque,
+      hitTestBehavior: hitTestBehavior,
+      child: this,
+    );
+  }
 }
