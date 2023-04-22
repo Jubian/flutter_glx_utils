@@ -47,7 +47,7 @@ class EmptyListView extends StatelessWidget {
         if (separatorBuilder != null) {
           return separatorBuilder!(context,index);
         } else {
-          return SizedBox();
+          return const SizedBox();
         }
       },
     );

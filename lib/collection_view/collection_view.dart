@@ -108,7 +108,7 @@ class CollectionView extends CustomScrollView {
       );
     } else if (item.cellType == ListCellType.grid && listBuilder != null) {
       return MasonryGridView.count(
-        physics: ClampingScrollPhysics(),
+        physics: const ClampingScrollPhysics(),
         shrinkWrap: true,
         itemCount: item.cellParams!.length,
         mainAxisSpacing: item.mainAxisSpacing,

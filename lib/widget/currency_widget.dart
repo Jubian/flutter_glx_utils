@@ -62,12 +62,12 @@ class _CustomSwitchState extends State<CustomSwitch> {
       child: Container(
         width: widget.width, 
         height: widget.height, 
-        decoration: BoxDecoration(color: Color(0xFFF6EDE5), 
+        decoration: BoxDecoration(color: const Color(0xFFF6EDE5), 
         borderRadius: BorderRadius.circular(widget.height/2)),
         child: Stack(
           children: [
             AnimatedPositioned(
-              duration: Duration(milliseconds: 200),
+              duration: const Duration(milliseconds: 200),
               left: _sliderOffset,
               bottom: 0,
               child: Container(
@@ -75,8 +75,8 @@ class _CustomSwitchState extends State<CustomSwitch> {
                 width: _selectedIndex == 0 ? _textWidth1 + widget.padding * 2 : _textWidth2 + widget.padding * 2,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(widget.height/2),
-                  gradient: LinearGradient(
-                    colors: const [Color(0xFFFEB982), Color(0xFFF69B52)],
+                  gradient: const LinearGradient(
+                    colors: [Color(0xFFFEB982), Color(0xFFF69B52)],
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight,
                   ),
