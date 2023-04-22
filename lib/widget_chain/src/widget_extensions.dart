@@ -845,4 +845,33 @@ extension WidgetChantExtWidget on Widget {
       child: this,
     );
   }
+
+  Listener intoListener({
+    Key? key,
+    void Function(PointerDownEvent)? onPointerDown,
+    void Function(PointerMoveEvent)? onPointerMove,
+    void Function(PointerUpEvent)? onPointerUp,
+    void Function(PointerHoverEvent)? onPointerHover,
+    void Function(PointerCancelEvent)? onPointerCancel,
+    void Function(PointerPanZoomStartEvent)? onPointerPanZoomStart,
+    void Function(PointerPanZoomUpdateEvent)? onPointerPanZoomUpdate,
+    void Function(PointerPanZoomEndEvent)? onPointerPanZoomEnd,
+    void Function(PointerSignalEvent)? onPointerSignal,
+    HitTestBehavior behavior = HitTestBehavior.deferToChild,
+  }) {
+    return Listener(
+      key: key,
+      onPointerDown: onPointerDown,
+      onPointerMove: onPointerMove,
+      onPointerUp: onPointerUp,
+      onPointerHover: onPointerHover,
+      onPointerCancel: onPointerCancel,
+      onPointerPanZoomStart: onPointerPanZoomStart,
+      onPointerPanZoomUpdate: onPointerPanZoomUpdate,
+      onPointerPanZoomEnd: onPointerPanZoomEnd,
+      onPointerSignal: onPointerSignal,
+      behavior: behavior,
+      child: this,
+    );
+  }
 }
